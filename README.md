@@ -24,5 +24,9 @@ Relay transaction worked with Lukso LINK Faucet: :warning: DO THIS AGAIN :warnin
 Twitter Name Space contract: https://explorer.execution.l16.lukso.network/address/0x5b1a5a842eB0ac44C0bC831a1233d0ac3b321eA3/transactions
 
 Verified: Twitter IDs: 
-1018093644 (r-x-r)
-1438606749389541377 (MarcusWentz)
+
+1018093644 
+(https://github.com/m-r-g-t)
+
+1438606749389541377 
+(https://github.com/MarcusWentz)
