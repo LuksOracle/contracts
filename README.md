@@ -25,8 +25,11 @@ Twitter Name Space contract: https://explorer.execution.l16.lukso.network/addres
 
 Verified: Twitter IDs: 
 
+1438606749389541377 
+(https://twitter.com/i/user/1438606749389541377)
+(https://github.com/MarcusWentz)
+
 1018093644 
+(https://twitter.com/i/user/1018093644)
 (https://github.com/m-r-g-t)
 
-1438606749389541377 
-(https://github.com/MarcusWentz)
