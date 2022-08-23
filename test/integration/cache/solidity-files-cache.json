@@ -1,12 +1,12 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/KeeperCompatible.sol": {
-      "lastModificationDate": 1647476695535,
-      "contentHash": "c153645393332a62a1e73cb0d5a6162c",
-      "sourceName": "@chainlink/contracts/src/v0.8/KeeperCompatible.sol",
+    "/home/marcuswentz/github/contracts/test/integration/contracts/TwitterNameSpace.sol": {
+      "lastModificationDate": 1661279671091,
+      "contentHash": "e566d3f68a29c9d1886b2a7701a5a41c",
+      "sourceName": "contracts/TwitterNameSpace.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -29,22 +29,22 @@
         }
       },
       "imports": [
-        "./KeeperBase.sol",
-        "./interfaces/KeeperCompatibleInterface.sol"
+        "@chainlink/contracts/src/v0.8/ChainlinkClient.sol",
+        "@openzeppelin/contracts/utils/Strings.sol"
       ],
       "versionPragmas": [
-        "^0.8.0"
+        "0.8.16"
       ],
       "artifacts": [
-        "KeeperCompatible"
+        "TwitterNameSpace"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/ChainlinkClient.sol": {
-      "lastModificationDate": 1647476695524,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/ChainlinkClient.sol": {
+      "lastModificationDate": 1661269783330,
       "contentHash": "6af479cbde42f1a7225c9cebc6e32239",
       "sourceName": "@chainlink/contracts/src/v0.8/ChainlinkClient.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -82,12 +82,12 @@
         "ChainlinkClient"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol": {
-      "lastModificationDate": 1647476696125,
-      "contentHash": "611f626b2447ccff9ba5332460fd217f",
-      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/AggregatorV3Interface.sol",
+    "/home/marcuswentz/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
+      "lastModificationDate": 1661269783714,
+      "contentHash": "cf46906c4035f51639a22265066a9e78",
+      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -114,85 +114,15 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "AggregatorV3Interface"
+        "Strings"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/KeeperBase.sol": {
-      "lastModificationDate": 1647476695534,
-      "contentHash": "216a5d4c261e07cc7b31f828950e35ad",
-      "sourceName": "@chainlink/contracts/src/v0.8/KeeperBase.sol",
-      "solcConfig": {
-        "version": "0.8.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "KeeperBase"
-      ]
-    },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol": {
-      "lastModificationDate": 1647476696168,
-      "contentHash": "bdbf3e274e50272d9c830fa414fcbec9",
-      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/KeeperCompatibleInterface.sol",
-      "solcConfig": {
-        "version": "0.8.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "KeeperCompatibleInterface"
-      ]
-    },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/Chainlink.sol": {
-      "lastModificationDate": 1647476695518,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/Chainlink.sol": {
+      "lastModificationDate": 1661269783326,
       "contentHash": "9dc050539cdf1579d5650d41d0df9ec2",
       "sourceName": "@chainlink/contracts/src/v0.8/Chainlink.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -225,12 +155,12 @@
         "Chainlink"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/ENSInterface.sol": {
-      "lastModificationDate": 1647476696130,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/ENSInterface.sol": {
+      "lastModificationDate": 1661269784214,
       "contentHash": "06b6aefcae95de6d1597ad8e1d73a08b",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/ENSInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -260,12 +190,12 @@
         "ENSInterface"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol": {
-      "lastModificationDate": 1647476696168,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol": {
+      "lastModificationDate": 1661269784226,
       "contentHash": "da5a0c3bd86c896f6a407f909c57edf3",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -295,12 +225,12 @@
         "LinkTokenInterface"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol": {
-      "lastModificationDate": 1647476696129,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol": {
+      "lastModificationDate": 1661269784214,
       "contentHash": "14407a6ead15cff8a0e0a7f8037c68f5",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/ChainlinkRequestInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -330,12 +260,12 @@
         "ChainlinkRequestInterface"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/OperatorInterface.sol": {
-      "lastModificationDate": 1647476696172,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/OperatorInterface.sol": {
+      "lastModificationDate": 1661269784230,
       "contentHash": "e1822c36361fc3a26b5a68df3ddab15d",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/OperatorInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -368,12 +298,12 @@
         "OperatorInterface"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/PointerInterface.sol": {
-      "lastModificationDate": 1647476696176,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/PointerInterface.sol": {
+      "lastModificationDate": 1661269784238,
       "contentHash": "27da4b2007d200dd5afff31dbf31ac99",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/PointerInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -403,12 +333,12 @@
         "PointerInterface"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/vendor/ENSResolver.sol": {
-      "lastModificationDate": 1647476696281,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/vendor/ENSResolver.sol": {
+      "lastModificationDate": 1661269784378,
       "contentHash": "24a98b0606654e662097eed9ffa91a11",
       "sourceName": "@chainlink/contracts/src/v0.8/vendor/ENSResolver.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -438,12 +368,12 @@
         "ENSResolver"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/vendor/CBORChainlink.sol": {
-      "lastModificationDate": 1647476696279,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/vendor/CBORChainlink.sol": {
+      "lastModificationDate": 1661269784374,
       "contentHash": "99b3ee2c29bc0d1a5cba583d9e8d835e",
       "sourceName": "@chainlink/contracts/src/v0.8/vendor/CBORChainlink.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -475,12 +405,12 @@
         "CBORChainlink"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/vendor/BufferChainlink.sol": {
-      "lastModificationDate": 1647476696277,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/vendor/BufferChainlink.sol": {
+      "lastModificationDate": 1661269784370,
       "contentHash": "52ac6f99fb0635751ae4ed11139878fd",
       "sourceName": "@chainlink/contracts/src/v0.8/vendor/BufferChainlink.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -510,12 +440,12 @@
         "BufferChainlink"
       ]
     },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/OracleInterface.sol": {
-      "lastModificationDate": 1647476696173,
+    "/home/marcuswentz/node_modules/@chainlink/contracts/src/v0.8/interfaces/OracleInterface.sol": {
+      "lastModificationDate": 1661269784230,
       "contentHash": "6283e42024961596926c2b5015eef8e0",
       "sourceName": "@chainlink/contracts/src/v0.8/interfaces/OracleInterface.sol",
       "solcConfig": {
-        "version": "0.8.12",
+        "version": "0.8.16",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -543,115 +473,6 @@
       ],
       "artifacts": [
         "OracleInterface"
-      ]
-    },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/test/integration/contracts/LightShowVRFv2V3.sol": {
-      "lastModificationDate": 1647476353166,
-      "contentHash": "20f66e8709e9fee5bc32184f0cc69d23",
-      "sourceName": "contracts/LightShowVRFv2V3.sol",
-      "solcConfig": {
-        "version": "0.8.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "@chainlink/contracts/src/v0.8/interfaces/LinkTokenInterface.sol",
-        "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
-        "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.12"
-      ],
-      "artifacts": [
-        "VRFv2LightShow"
-      ]
-    },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol": {
-      "lastModificationDate": 1647476696180,
-      "contentHash": "56ec852a2aeddf81bf5a5720a7fc6a63",
-      "sourceName": "@chainlink/contracts/src/v0.8/interfaces/VRFCoordinatorV2Interface.sol",
-      "solcConfig": {
-        "version": "0.8.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "VRFCoordinatorV2Interface"
-      ]
-    },
-    "/Users/jp/Documents/Solidity/ETHDenver/ElectricKeepers/ElectricKeeper/node_modules/@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol": {
-      "lastModificationDate": 1647476695550,
-      "contentHash": "8cb9d3df2c7eda7096fc5f221bdebed3",
-      "sourceName": "@chainlink/contracts/src/v0.8/VRFConsumerBaseV2.sol",
-      "solcConfig": {
-        "version": "0.8.12",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "VRFConsumerBaseV2"
       ]
     }
   }

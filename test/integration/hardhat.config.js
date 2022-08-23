@@ -2,21 +2,16 @@ require("@nomiclabs/hardhat-ethers");
 require('solidity-coverage');
 // require("@nomiclabs/hardhat-etherscan");
 
-const MUMBAI_RPC_URL = process.env.MUMBAI_API_KEY
-const RINKEBY_RPC_URL = process.env.RINKEBY_API_KEY
-const PRIVATE_KEY = process.env.PRVIATE_KEY
+const LUKSO_RPC_URL = "https://rpc.l16.lukso.network"
+const PRIVATE_KEY = process.env.devTestnetPrivateKey
 
 module.exports = {
-  defaultNetwork: "rinkeby",
+  defaultNetwork: "lukso",
   networks: {
     hardhat: {
     },
-    mumbai: {
-      url: MUMBAI_RPC_URL,
-      accounts: [PRIVATE_KEY]
-    },
-    rinkeby: {
-      url: RINKEBY_RPC_URL,
+    lukso: {
+      url: LUKSO_RPC_URL,
       accounts: [PRIVATE_KEY]
     }
   },
@@ -26,7 +21,7 @@ module.exports = {
   solidity: {
     compilers: [{version: "0.8.0"},
     {version: "0.8.7"},
-    {version: "0.8.12"},
+    {version: "0.8.16"},
     {version: "0.6.6"}],
     settings: {
       optimizer: {
