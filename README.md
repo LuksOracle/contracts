@@ -23,7 +23,7 @@ Relay transaction worked with Lukso LINK Faucet: :warning: Old contract version 
 
 Twitter Name Space contract: https://explorer.execution.l16.lukso.network/address/0x5b1a5a842eB0ac44C0bC831a1233d0ac3b321eA3/transactions
 
-## Hardhat Testing
+## :barrier: Hardhat Testing
 
 ### Unit Testing
 
@@ -31,7 +31,7 @@ Twitter Name Space contract: https://explorer.execution.l16.lukso.network/addres
 
 <img src="https://github.com/LuksOracle/contracts/blob/main/test/unit/unitTests.png" alt="Testing"/>
 
-## Integration Testing
+### Integration Testing
 
 Hardhat would not send Lukso transactions even though they had the right chain ID.
 
