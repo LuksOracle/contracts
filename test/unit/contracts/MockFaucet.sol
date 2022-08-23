@@ -3,17 +3,28 @@ pragma solidity 0.8.16;
 
 import "@openzeppelin/contracts/token/ERC20/ERC20.sol";
 
-contract ERC20TokenContract is ERC20("ChainLink Token", "LINK") {}
+contract ChainLink is ERC20{
 
-contract MockFaucetLINK {
+    address immutable Owner;
 
-    address private ChainlinkTokenAddressLuksoL16 = 0xbFB26279a9D28CeC1F781808Da89eFbBfE2c4268;
-    ERC20TokenContract tokenObject = ERC20TokenContract(ChainlinkTokenAddressLuksoL16);
+    constructor() ERC20("Chainlink","LINK") {
+        Owner = msg.sender;
+        _mint(Owner,1000000 ether );
+    }
+
+}
+
+contract ERC20TokenContract is ERC20("Chainlink", "LINK") {}
+
+contract mockFaucetLINK {
+
+    ERC20TokenContract tokenObject;
 
     address public immutable relayAddress;
 
-    constructor() {
+    constructor(address _token) {
         relayAddress = msg.sender;
+        tokenObject = ERC20TokenContract(_token); //ERC20 token address goes here.
     }
 
     mapping(address => uint) public userPreviousWithdrawTime;

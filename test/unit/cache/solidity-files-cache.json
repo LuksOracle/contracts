@@ -1,6 +1,48 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
+    "/home/marcuswentz/github/contracts/test/unit/contracts/MockFaucet.sol": {
+      "lastModificationDate": 1661275010755,
+      "contentHash": "a6b3d028c23768cbaa06d62da4ee5de5",
+      "sourceName": "contracts/MockFaucet.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
+      ],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "ChainLink",
+        "ERC20TokenContract",
+        "mockFaucetLINK"
+      ]
+    },
     "/home/marcuswentz/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
       "lastModificationDate": 1661269782918,
       "contentHash": "af7bd64e1cfefbf6cb07f2adc1a25392",
@@ -195,47 +237,6 @@
       ],
       "artifacts": [
         "MockTwitterNameSpace"
-      ]
-    },
-    "/home/marcuswentz/github/contracts/test/unit/contracts/MockFaucet.sol": {
-      "lastModificationDate": 1661273703200,
-      "contentHash": "416b96fcd61d5d2af9eec876e2e06b57",
-      "sourceName": "contracts/MockFaucet.sol",
-      "solcConfig": {
-        "version": "0.8.16",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": false
-          }
-        }
-      },
-      "imports": [
-        "@openzeppelin/contracts/token/ERC20/ERC20.sol"
-      ],
-      "versionPragmas": [
-        "0.8.16"
-      ],
-      "artifacts": [
-        "ERC20TokenContract",
-        "MockFaucetLINK"
       ]
     }
   }
