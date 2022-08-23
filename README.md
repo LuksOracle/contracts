@@ -23,7 +23,7 @@ Relay transaction worked with Lukso LINK Faucet: :warning: Old contract version 
 
 Twitter Name Space contract: https://explorer.execution.l16.lukso.network/address/0x5b1a5a842eB0ac44C0bC831a1233d0ac3b321eA3/transactions
 
-## :barrier: Hardhat Testing
+## Hardhat Testing
 
 ### Unit Testing
 
