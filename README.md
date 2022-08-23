@@ -6,11 +6,11 @@ Lukso LINK: https://explorer.execution.l16.lukso.network/address/0xbFB26279a9D28
 
 (From Ethereum Mainnet LINK contract: https://etherscan.io/token/0x514910771af9ca656af840dff83e8264ecf986ca#code)
 
-## Chainlink Oracle Contracts:
+## Chainlink Oracle Contract and Job ID:
 
 Oracle.sol: https://explorer.execution.l16.lukso.network/address/0x401ae6Bfb89448fB6e06CE7C9171a8A0366d02d0/transactions
 
-Chainlink job ID: 13a2fe212bcf40978d8c0d52b8d96e4d
+Chainlink Job ID: 13a2fe212bcf40978d8c0d52b8d96e4d
 
 ## :fountain: LINK Faucet
 
