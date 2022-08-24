@@ -70,7 +70,6 @@ console.log("nonce: " + nonce)
 console.log("abiPayload:" + abiPayload)
 console.log("UP Key manager: " + controllerAccount.address)
 
-
 contractDefined_JS.methods.userPreviousWithdrawTime(airdropWallet).call((err, userPreviousWithdrawTime) => {
   console.log({ err, userPreviousWithdrawTime })
   console.log(Date.now()-43200)
@@ -90,7 +89,6 @@ const executeRelayCallTransaction = await KeyManager.methods
       .executeRelayCall(signature, nonce, abiPayload)
       .send({from: controllerAccount.address, gasLimit: 300_000});
     console.log("executeRelayCallTransaction: " + executeRelayCallTransaction)
-
 
 }
 
