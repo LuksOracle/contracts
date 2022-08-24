@@ -23,6 +23,10 @@ Relay transaction worked with Lukso LINK Faucet: https://explorer.execution.l16.
 
 Twitter Name Space contract: https://explorer.execution.l16.lukso.network/address/0x5b1a5a842eB0ac44C0bC831a1233d0ac3b321eA3/transactions
 
+UP mock request: https://explorer.execution.l16.lukso.network/tx/0x82ec4525acc02d2f111b474615908fc06a241663fada04207d3fd647708a8dc5
+
+UP mock fulfill: https://explorer.execution.l16.lukso.network/tx/0xd3c4355ba7e7721523dd5f52bfff5a82734233fa4bcfa5d1f5abcdc37dd5fd64
+
 ## Hardhat Testing
 
 ### Unit Testing
