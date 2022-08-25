@@ -25,8 +25,8 @@ contract MockTwitterNameSpace {
         uint96 decodeTwitterID = uint96((compressedAddressUint96>>160));
         address decodeAddressID = address(uint160(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF));
         if(_addressFromTweetMatches == 1){
-            if(twitterIDaddress[twitter_id_Request] != address(0)){
-                addressTwitterID[twitterIDaddress[twitter_id_Request]] = 0;
+            if(twitterIDaddress[decodeTwitterID] != address(0)){
+                addressTwitterID[twitterIDaddress[decodeTwitterID]] = 0;
             }
                 addressTwitterID[decodeAddressID] = decodeTwitterID;
                 twitterIDaddress[decodeTwitterID] = decodeAddressID;
