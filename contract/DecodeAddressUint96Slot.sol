@@ -11,11 +11,11 @@ contract DecodeAddressUint96Slot {
     uint public shiftedTempTwitter_id = tempTwitter_id<<160;          
 
 
-    //Mix:     2102526119708102645787803376829020643996960003419432819009785138511
-    uint public mix = shiftedTempTwitter_id + tempRequestAddress;
+    //Mix:     0x0000000013f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f == 2102526119708102645787803376829020643996960003419432819009785138511
+    bytes32 public mix = bytes32(shiftedTempTwitter_id + tempRequestAddress);
 
     //Decode
-    uint public decodeTwitterID = (mix>>160);
-    address public decodeAddressID = address(uint160(mix & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF));
+    uint public decodeTwitterID = (uint(mix)>>160);
+    address public decodeAddressID = address(uint160(uint(mix) & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF));
 
 }
