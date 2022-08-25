@@ -12,6 +12,6 @@ contract DecodeAddressUint96Slot {
 
     //Decode
     uint public decodeTwitterID = (mix>>160);
-    uint public decodeAddressID = tempRequestAddress & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
+    uint public decodeAddressID = mix & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF;
 
 }
