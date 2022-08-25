@@ -22,9 +22,6 @@ describe("ElectricKeeper Unit Tests:", function () {
   });
 
   describe("constructor()", function () {
-    // it("relayAddress is equal to default ethers.getSigners() address.", async function () {
-    //   expect(await ContractDeployed.relayAddress()).to.equal(owner.address);
-    // });
     it("tempTwitter_id 0.", async function () {
       expect(await ContractDeployed.tempTwitter_id()).to.equal(0);
     });

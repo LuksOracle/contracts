@@ -238,6 +238,44 @@
       "artifacts": [
         "MockTwitterNameSpace"
       ]
+    },
+    "/home/marcuswentz/github/contracts/test/unit/contracts/MockTwitterCompressed.sol": {
+      "lastModificationDate": 1661439620605,
+      "contentHash": "6945bd2a3d58a48a47a1f3f0f241a087",
+      "sourceName": "contracts/MockTwitterCompressed.sol",
+      "solcConfig": {
+        "version": "0.8.16",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          },
+          "metadata": {
+            "useLiteralContent": false
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.16"
+      ],
+      "artifacts": [
+        "MockTwitterNameSpaceCompressed"
+      ]
     }
   }
 }

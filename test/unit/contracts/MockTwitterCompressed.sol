@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.16;
 
-contract MockTwitterNameSpaceCompressed { 
+contract MockTwitterNameSpaceCompressed {
 
     uint public _addressFromTweetMatches = 1;
 
