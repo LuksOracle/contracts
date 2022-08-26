@@ -10,11 +10,10 @@ contract DecodeAddressUint96Slot {
     uint public tempTwitter_id = 1438606749389541377;          
     uint public shiftedTempTwitter_id = tempTwitter_id<<160;          
 
-
-    //Mix (compress number for Chainlink request string):     
-    //Hex: 0x0000000013f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f 
-    //Uint: 2102526119708102645787803376829020643996960003419432819009785138511
+    //Mix:     0x0000000013f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f == 2102526119708102645787803376829020643996960003419432819009785138511
     bytes32 public mix = bytes32(shiftedTempTwitter_id + tempRequestAddress);
+    bytes32 public mixHexValid = 0x0000000013f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f;
+    // bytes32 public mixHexInvalid = 0x13f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f;
 
     //Decode
     uint public decodeTwitterID = (uint(mix)>>160);
