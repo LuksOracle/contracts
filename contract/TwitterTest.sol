@@ -8,12 +8,6 @@ contract TwitterNameSpace is ChainlinkClient {
 
     using Chainlink for Chainlink.Request;
 
-
-
-    bytes32 public testVALUE;
-
-
-
     mapping(address => uint96) public addressTwitterID;
     mapping(uint96 => address) public twitterIDaddress;
 
@@ -37,9 +31,6 @@ contract TwitterNameSpace is ChainlinkClient {
     }
 
     function fulfillTweetAddressCompare(bytes32 _requestId, bytes32 compressedAddressUint96) public recordChainlinkFulfillment(_requestId) {
-
-        testVALUE = compressedAddressUint96;
-
         uint96 decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
         address decodeAddressID = address(uint160(uint(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF)));
         if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
