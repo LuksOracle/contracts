@@ -17,7 +17,7 @@ contract DecodeAddressUint96Slot {
     // bytes32 public mixHexInvalidString = "0x13f6f5376cd7d001c1202e7d42655f23097476f6d48006fe56d38d4f";
 
     //Decode
-    uint public decodeTwitterID = (uint(mix)>>160);
+    uint96 public decodeTwitterID = uint96(uint(mix)>>160);
     address public decodeAddressID = address(uint160(uint(mix) & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF));
 
 }
