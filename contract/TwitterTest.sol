@@ -31,7 +31,7 @@ contract TwitterNameSpace is ChainlinkClient {
     }
 
     function fulfillTweetAddressCompare(bytes32 _requestId, bytes32 compressedAddressUint96) public recordChainlinkFulfillment(_requestId) {
-        uint96 decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
+        uint96  decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
         address decodeAddressID = address(uint160(uint(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF)));
         if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
             if(twitterIDaddress[decodeTwitterID] != address(0)){
