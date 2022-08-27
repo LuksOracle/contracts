@@ -8,6 +8,12 @@ contract TwitterNameSpace is ChainlinkClient {
 
     using Chainlink for Chainlink.Request;
 
+
+
+    bytes32 public testVALUE;
+
+
+
     mapping(address => uint96) public addressTwitterID;
     mapping(uint96 => address) public twitterIDaddress;
 
@@ -24,16 +30,19 @@ contract TwitterNameSpace is ChainlinkClient {
     }
 
     function requestTweetAddressCompare(uint96 twitter_id_Request) public returns (bytes32 requestId) {
-        Chainlink.Request memory req = buildChainlinkRequest("13a2fe212bcf40978d8c0d52b8d96e4d", address(this), this.fulfillTweetAddressCompare.selector);
+        Chainlink.Request memory req = buildChainlinkRequest("31c6d9c97ae64e6da1d82cdf4b4077ad", address(this), this.fulfillTweetAddressCompare.selector);
         req.add("twitter_id"   , Strings.toString(twitter_id_Request));                                    // Point at specific Tweet.
         req.add("address_owner", Strings.toHexString(uint160(msg.sender), 20) ); //Point at msg.sender (type string to handle Chainlink request).
         return sendChainlinkRequest(req, 1 ether);
     }
 
     function fulfillTweetAddressCompare(bytes32 _requestId, bytes32 compressedAddressUint96) public recordChainlinkFulfillment(_requestId) {
+
+        testVALUE = compressedAddressUint96;
+
         uint96 decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
         address decodeAddressID = address(uint160(uint(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF)));
-        if(compressedAddressUint96 == 0x0000000000000000000000000000000000000000000000000000000000000000){
+        if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
             if(twitterIDaddress[decodeTwitterID] != address(0)){
                 addressTwitterID[twitterIDaddress[decodeTwitterID]] = 0;
             }
