@@ -2,7 +2,7 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/home/marcuswentz/github/contracts/test/unit/contracts/MockFaucet.sol": {
-      "lastModificationDate": 1661275010755,
+      "lastModificationDate": 1661649285196,
       "contentHash": "a6b3d028c23768cbaa06d62da4ee5de5",
       "sourceName": "contracts/MockFaucet.sol",
       "solcConfig": {
@@ -44,7 +44,7 @@
       ]
     },
     "/home/marcuswentz/node_modules/@openzeppelin/contracts/token/ERC20/ERC20.sol": {
-      "lastModificationDate": 1661269782918,
+      "lastModificationDate": 1661440760074,
       "contentHash": "af7bd64e1cfefbf6cb07f2adc1a25392",
       "sourceName": "@openzeppelin/contracts/token/ERC20/ERC20.sol",
       "solcConfig": {
@@ -86,7 +86,7 @@
       ]
     },
     "/home/marcuswentz/node_modules/@openzeppelin/contracts/token/ERC20/IERC20.sol": {
-      "lastModificationDate": 1661269783366,
+      "lastModificationDate": 1661440760130,
       "contentHash": "ad7c2d0af148c8f9f097d65deeb4da6b",
       "sourceName": "@openzeppelin/contracts/token/ERC20/IERC20.sol",
       "solcConfig": {
@@ -124,7 +124,7 @@
       ]
     },
     "/home/marcuswentz/node_modules/@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol": {
-      "lastModificationDate": 1661269783378,
+      "lastModificationDate": 1661440760130,
       "contentHash": "909ab67fc5c25033fe6cd364f8c056f9",
       "sourceName": "@openzeppelin/contracts/token/ERC20/extensions/IERC20Metadata.sol",
       "solcConfig": {
@@ -164,7 +164,7 @@
       ]
     },
     "/home/marcuswentz/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1661269782498,
+      "lastModificationDate": 1661440760002,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
       "sourceName": "@openzeppelin/contracts/utils/Context.sol",
       "solcConfig": {
@@ -202,8 +202,8 @@
       ]
     },
     "/home/marcuswentz/github/contracts/test/unit/contracts/MockTwitter.sol": {
-      "lastModificationDate": 1661270520655,
-      "contentHash": "666dd197fc157bf75ec29c739cb755d3",
+      "lastModificationDate": 1661653113832,
+      "contentHash": "1cf92a4962e91cc38bfd79a4839cd7d6",
       "sourceName": "contracts/MockTwitter.sol",
       "solcConfig": {
         "version": "0.8.16",
@@ -237,44 +237,6 @@
       ],
       "artifacts": [
         "MockTwitterNameSpace"
-      ]
-    },
-    "/home/marcuswentz/github/contracts/test/unit/contracts/MockTwitterCompressed.sol": {
-      "lastModificationDate": 1661439620605,
-      "contentHash": "6945bd2a3d58a48a47a1f3f0f241a087",
-      "sourceName": "contracts/MockTwitterCompressed.sol",
-      "solcConfig": {
-        "version": "0.8.16",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          },
-          "metadata": {
-            "useLiteralContent": false
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.8.16"
-      ],
-      "artifacts": [
-        "MockTwitterNameSpaceCompressed"
       ]
     }
   }

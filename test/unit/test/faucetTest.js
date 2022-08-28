@@ -21,7 +21,7 @@ describe("Faucet Tests:", function () {
         ContractDeployed = await Contract.deploy(ERC20Deployed.address);
       });
 
-      describe("Constructor", function () {
+      describe("constructor()", function () {
           it("Owner has not withdrawn", async function () {
             expect(await ContractDeployed.userPreviousWithdrawTime(owner.address)).to.equal(0);
           });
@@ -34,7 +34,7 @@ describe("Faucet Tests:", function () {
 
        });
 
-       describe("withdrawDirect", function () {
+       describe("withdrawDirect()", function () {
            it("Revert if no LINK in faucet", async function () {
              await expect(
                ContractDeployed.withdrawDirect()
@@ -59,7 +59,7 @@ describe("Faucet Tests:", function () {
 
         });
 
-        describe("withdrawRelay", function () {
+        describe("withdrawRelay(relayCaller)", function () {
             it("Revert if relayAddress is not msg.sender", async function () {
               await expect(
                 ContractDeployed.connect(addr1).withdrawRelay(addr1.address)

@@ -4,7 +4,7 @@ pragma solidity 0.8.16;
 import "@chainlink/contracts/src/v0.8/ChainlinkClient.sol";
 import "@openzeppelin/contracts/utils/Strings.sol";
 
-contract TwitterNameSpace is ChainlinkClient { 
+contract TwitterNameSpace is ChainlinkClient {
 
     using Chainlink for Chainlink.Request;
 
@@ -31,9 +31,9 @@ contract TwitterNameSpace is ChainlinkClient {
     }
 
     function fulfillTweetAddressCompare(bytes32 _requestId, bytes32 compressedAddressUint96) public recordChainlinkFulfillment(_requestId) {
+        if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
         uint96  decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
         address decodeAddressID = address(uint160(uint(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF)));
-        if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
             if(twitterIDaddress[decodeTwitterID] != address(0)){
                 addressTwitterID[twitterIDaddress[decodeTwitterID]] = 0;
             }

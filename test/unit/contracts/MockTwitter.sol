@@ -3,10 +3,7 @@ pragma solidity 0.8.16;
 
 contract MockTwitterNameSpace {
 
-    address public tempRequestAddress;      //20 BYTES, 20/32 FOR SLOT 0
-    uint96  public tempTwitter_id;          //12 BYTES, 32/32 FOR SLOT 0
-
-    uint public _addressFromTweetMatches;
+    uint public isTwitterAddressMatching;
 
     mapping(address => uint96) public addressTwitterID;
     mapping(uint96 => address) public twitterIDaddress;
@@ -19,28 +16,34 @@ contract MockTwitterNameSpace {
     }
 
     function requestTweetAddressCompare(uint96 twitter_id_Request) public {
-        require(tempTwitter_id ==  0 && tempRequestAddress == address(0), "REQUEST ALREADY ACTIVE!");
-        //Skip sending to oracle.
-        tempTwitter_id = twitter_id_Request;
-        tempRequestAddress = msg.sender;
-    }
-
-    function mockRequestAnswer(uint mockRequestReturnValue) public {
-       _addressFromTweetMatches = mockRequestReturnValue;
-    }
-
-    function mockFulfillLogic() public {
-        if(_addressFromTweetMatches == 1){
-            if(twitterIDaddress[tempTwitter_id] != address(0)){
-                addressTwitterID[twitterIDaddress[tempTwitter_id]] = 0;
-                addressTwitterID[twitterIDaddress[tempTwitter_id]] = 0;
-            }
-                addressTwitterID[tempRequestAddress] = tempTwitter_id;
-                twitterIDaddress[tempTwitter_id] = tempRequestAddress;
+        //Mock fulfill response
+        bytes32 compressedAddressUint96;
+        uint tempRequestAddress;
+        uint tempTwitter_id;
+        uint shiftedTempTwitter_id;
+        if(isTwitterAddressMatching == 1){
+            //Emulate response
+            tempRequestAddress = uint(uint160(msg.sender));
+            tempTwitter_id = twitter_id_Request;
+            shiftedTempTwitter_id = tempTwitter_id<<160;
+            compressedAddressUint96 = bytes32(shiftedTempTwitter_id + tempRequestAddress);
         }
-        tempRequestAddress = address(0);
-        tempTwitter_id = 0;
+
+        //Fulfill mock update
+        if(compressedAddressUint96 != 0x0000000000000000000000000000000000000000000000000000000000000000){
+        uint96  decodeTwitterID = uint96(uint((compressedAddressUint96>>160)));
+        address decodeAddressID = address(uint160(uint(compressedAddressUint96 & 0x000000000000000000000000FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF)));
+            if(twitterIDaddress[decodeTwitterID] != address(0)){
+                addressTwitterID[twitterIDaddress[decodeTwitterID]] = 0;
+            }
+                addressTwitterID[decodeAddressID] = decodeTwitterID;
+                twitterIDaddress[decodeTwitterID] = decodeAddressID;
+        }
         emit tweetRequestEvent();
+    }
+
+    function mockRequestAnswer(uint setTwitterAddressMatching) public {
+        isTwitterAddressMatching = setTwitterAddressMatching;
     }
 
     function resolveToTwitterID(uint96 _twitter_id) public twitterMatchesAccount(_twitter_id,msg.sender){
