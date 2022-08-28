@@ -81,7 +81,7 @@ contractDefined_JS.methods.userPreviousWithdrawTime(airdropWallet).call((err, us
 chainlinkInterfaceERC20_CONTRACT.methods.balanceOf(contractAddress_JS).call((err, balanceLINK) => {
   console.log({ err, balanceLINK })
   if((balanceLINK >= "20000000000000000000") == false) {
-    throw new Error("NOT ENOUGH LINK IN CONTRACT!");
+    throw new Error("Faucet does not have any more LINK (has less than 20 LINK currently)");
   }
 })
 
