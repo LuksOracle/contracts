@@ -33,19 +33,18 @@ UP mock fulfill: https://explorer.execution.l16.lukso.network/tx/0xd3c4355ba7e77
 
 100% Solidity Coverage for both contracts:
 
-<img src="https://github.com/LuksOracle/contracts/blob/main/test/unit/unitTests.png" alt="Testing"/>
+<img src="https://github.com/LuksOracle/contracts/blob/main/test/unit/unitTestCoverage.png" alt="Testing"/>
 
 ### Integration Testing
 
 Hardhat would not send Lukso transactions even though they had the right chain ID.
 
-Here are some Twitter IDs we verified outside of Hardhat: 
+Here are some Twitter IDs we verified outside of Hardhat:
 
-1438606749389541377 
+1438606749389541377
 (https://twitter.com/i/user/1438606749389541377)
 (https://github.com/MarcusWentz)
 
-1018093644 
+1018093644
 (https://twitter.com/i/user/1018093644)
 (https://github.com/m-r-g-t)
-
