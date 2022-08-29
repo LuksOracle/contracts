@@ -48,3 +48,11 @@ Here are some Twitter IDs we verified outside of Hardhat:
 1018093644
 (https://twitter.com/i/user/1018093644)
 (https://github.com/m-r-g-t)
+
+903308459147448324
+(https://twitter.com/0xfinesto)
+(https://github.com/thomas779)
+
+53525037
+(https://twitter.com/gabibibah)
+(https://github.com/gabiburkoth)
