@@ -41,6 +41,8 @@ Hardhat would not send Lukso transactions even though they had the right chain I
 
 Here are some Twitter IDs we verified outside of Hardhat:
 
+EOA Wallets:
+
 1438606749389541377
 (https://twitter.com/i/user/1438606749389541377)
 (https://github.com/MarcusWentz)
@@ -56,3 +58,9 @@ Here are some Twitter IDs we verified outside of Hardhat:
 53525037
 (https://twitter.com/gabibibah)
 (https://github.com/gabiburkoth)
+
+Universal Profile:
+
+1563659416347430912
+(https://twitter.com/luksOracle)
+(https://github.com/LuksOracle)
