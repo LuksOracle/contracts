@@ -52,15 +52,15 @@ EOA Wallets:
 (https://github.com/m-r-g-t)
 
 903308459147448324
-(https://twitter.com/903308459147448324)
+(https://twitter.com/i/user/903308459147448324)
 (https://github.com/thomas779)
 
 53525037
-(https://twitter.com/53525037)
+(https://twitter.com/i/user/53525037)
 (https://github.com/gabiburkoth)
 
 Universal Profile:
 
 1563659416347430912
-(https://twitter.com/1563659416347430912)
+(https://twitter.com/i/user/1563659416347430912)
 (https://github.com/LuksOracle)
