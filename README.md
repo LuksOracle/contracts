@@ -10,7 +10,7 @@ Lukso LINK: https://explorer.execution.l16.lukso.network/address/0xbFB26279a9D28
 
 Oracle.sol: https://explorer.execution.l16.lukso.network/address/0x401ae6Bfb89448fB6e06CE7C9171a8A0366d02d0/transactions
 
-Chainlink Job ID: 13a2fe212bcf40978d8c0d52b8d96e4d
+Chainlink Job ID: 31c6d9c97ae64e6da1d82cdf4b4077ad
 
 ## :fountain: LINK Faucet
 
