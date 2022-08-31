@@ -62,3 +62,7 @@ Universal Profile:
 1563659416347430912
 (https://twitter.com/i/user/1563659416347430912)
 (https://github.com/LuksOracle)
+
+View Universal Profile Address In Detail:
+
+https://erc725-inspect.lukso.tech/inspect?address=0x8414F1BaC5fCdA2C274A4a78D0D62109f1Cbb6C8
