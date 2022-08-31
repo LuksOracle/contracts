@@ -27,7 +27,7 @@ Twitter Name Space contract: https://explorer.execution.l16.lukso.network/addres
 
 100% Solidity Coverage for both contracts:
 
-<img src="https://github.com/LuksOracle/contracts/blob/main/test/unit/unitTestCoverage.png" alt="Testing"/>
+<img src="https://github.com/LuksOracle/contracts/blob/main/test/unit/unitTestCoverageUpdated.png" alt="Testing"/>
 
 ### Integration Testing
 
